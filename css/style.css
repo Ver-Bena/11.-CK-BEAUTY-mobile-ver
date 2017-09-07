@@ -1,0 +1,214 @@
+*, p, dl, ul, h1, h2, h3, h4, h5, h6 { margin: 0; padding: 0; }
+body { font-family: 'Nanum Gothic'; }
+li { list-style: none; }
+
+.header { background-color: #fff; overflow: auto; }
+
+.header .logo {
+  width: 35%;
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+
+.header .search {
+  margin-top: 2.5rem;
+  margin-right: 2rem;
+  float: right;
+  overflow: auto;
+}
+
+.header .search > * {
+  float: left;
+}
+
+.header .search input {
+  width: 10rem; height: 2.6rem;
+}
+
+.header .search button {
+  color: #fff;
+  background-color: #000;
+  border: 0;
+  padding: 0.3rem 0.5rem;
+}
+
+.nav {
+  text-align: center;
+  background: -webkit-linear-gradient(left, #1ad7ed 0%,#95a5f0 100%);
+  background: linear-gradient(to right, #1ad7ed 0%,#95a5f0 100%);
+  background-size: cover;
+  margin-top: 1.5rem;
+  padding: 1rem;
+}
+
+.nav ul { margin: 0; }
+.nav ul li { width: 25%; float: left; }
+.nav ul li a { color: #fff; }
+
+.main1 .banner {
+  background-color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+}
+
+.main1 .banner .best {
+  display: inline-block;
+  width: 90%;
+  text-align: left;
+  margin-top: 4rem;
+}
+
+.main1 .banner .best:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.main1 .banner .best dl {
+  width: 49%;
+  background-color: #fff;
+  float: left;
+  position: relative;
+}
+
+.main1 .banner .best dl:first-child {
+  margin-right: 2%;
+}
+
+.main1 .banner .best dt { padding: 0.5rem; }
+.main1 .banner .best dt .best-label {
+  width: 25%;
+  position: absolute;
+  top: -5px; right: 10px;
+}
+
+.main1 .banner .best dt .sale-item { width: 100%; }
+.main1 .banner .best dd .desc,
+.main1 .banner .best dd .status { padding: 0.5rem; }
+.main1 .banner .best dd .status {
+  font-size: 1rem;
+  border-top: 1px solid #d0d0d0;
+  overflow: auto;
+}
+
+.main1 .banner .best dd .sale {
+  display: inline-block;
+  color: #fd6000;
+  font-size: 3rem;
+}
+
+.main1 .banner .best dd .prices {
+  display: inline-block;
+  margin-left: 0.5rem;
+  line-height: 1.5rem;
+}
+
+.main1 .banner .best dd .prices .origin-price {
+  color: #c2c2c2;
+  font-size: 1.2rem;
+  text-decoration: line-through;
+}
+
+.main1 .banner .best dd .title { font-size: 1.3rem; }
+.main1 .banner .best .status .cur-cnt { float: left; }
+.main1 .banner .best .status .cur-cnt span { color: #00d2eb; }
+
+.main1 .banner .best .status .star {
+  display: inline-block;
+  width: 1.5rem; height: 1.5rem;
+  background-image: url(../img/star.png);
+  background-size: cover;
+  float: right;
+}
+
+.main1 .banner .indicator { display: inline-block; overflow: auto; }
+.main1  .banner .indicator li {
+  width: 1rem; height: 1rem;
+  background-color: #fff;
+  border-radius: 100%;
+  margin: 0 0.2rem;
+  float: left;
+}
+
+.main1 .banner .indicator li a {
+  display: inline-block;
+  width: 100%; height: 100%;
+}
+
+.main1 .ads { overflow: auto; }
+
+.main1 .ads img {
+  width: 100%;
+}
+
+.main1 .ads .left, .main1 .ads .right {
+  float: left;
+}
+
+.main1 .ads .left { width: 60%; }
+.main1 .ads .right { width: 40%; }
+
+.main2 .banner {
+  position: relative;
+}
+
+.main2 .banner .woman {
+  width: 40%;
+  position: absolute;
+  bottom: -25px; right: 0;
+}
+
+.main2 .banner .banner-img {
+  width: 100%;
+}
+
+.main2 .ads {
+  background-color: #c6cbf5;
+  padding: 1rem;
+}
+
+.main2 .top {
+  background-color: #fff;
+  padding: 1rem;
+  overflow: auto;
+}
+
+.main2 .top > * { float: left; }
+.main2 .top .items { width: 65%; }
+.main2 .top .items dl { overflow: auto; }
+.main2 .top .items dl > * { float: right; }
+.main2 .top .items dt { width: 40%; }
+.main2 .top .items dt img { width: 100%; }
+.main2 .top .items dd { width: 60%; }
+.main2 .top .items dd h2 { font-weight: 600; font-size: 1.4rem; }
+.main2 .top .items dd p {
+  color: #8f8d8d;
+  font-size: 1rem;
+  margin-bottom: 0.7rem;
+}
+.main2 .top .items dd p .subtitle { color: #000; font-size: 1.1rem; }
+.main2 .top .items dd .price {
+  display: inline-block;
+  color: #ff7e00;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.main2 .top .items dd button {
+  color: #b9b9b9;
+  font-size: 1.1rem;
+  background-color: #fff;
+  border: 1px solid #b9b9b9;
+  padding: 0 0.8rem;
+}
+
+.main2 .top .category {
+  width: 35%; height: 100%;
+}
+
+.main2 .top .category a { display: block; margin-bottom: 0.3rem; }
+.main2 .top .category img { width: 100%; height: 100%; }
+.main2 .bottom ul { margin: 1rem 0; overflow: auto; }
+.main2 .bottom ul li { width: 32.33%; float: left; margin-right: 1.5%; }
+.main2 .bottom ul li:last-child { margin: 0; }
+.main2 .bottom ul li a { display: inline-block; width: 100%; height: 100%; }
+.main2 .bottom ul li a img { width: 100%; }
